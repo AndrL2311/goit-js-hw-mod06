@@ -18,7 +18,7 @@ const sorted = numbers
     .map(num => num * 3)
     .sort((a, b) => a - b);
 
-console.log(sorted);
+// console.log(sorted);
 
 /*
  * Сортируем тех кто онлайн по рангу
@@ -37,7 +37,7 @@ const onlineAndSorted = players
     .filter(player => player.isOnline)
     .sort((playerA, playerB) => playerA.rank - playerB.rank);
 
-// console.table(onlineAndSorted);
+//  console.table(onlineAndSorted);
 
 /*
  * Chaining в методах объекта как jquery
@@ -59,4 +59,4 @@ const element = {
 };
 
 element.toggleHovered().changeClass('open').toggleHovered();
-console.log(element);
+// console.log(element);
