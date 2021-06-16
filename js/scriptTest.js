@@ -78,8 +78,14 @@ const people = [
   },
 ];
 
-
-const getUsersWithEyeColor = (users,color) => users.filter(user => user.eyeColor === color);
-
+// Пиши код ниже этой строки
+const getFriends = users => {
+  const allFriends = users.flatMap(user => user.friends);
+  console.log(allFriends);
+  return allFriends.filter(
+    (friend, index, arrey) => arrey.indexOf(friend) === index,
+  );
+  console.log();
+};
 // Пиши код выше этой строки
-console.log(getUsersWithEyeColor(people, 'green'));
+getFriends(people);
