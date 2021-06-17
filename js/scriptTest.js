@@ -78,14 +78,15 @@ const people = [
   },
 ];
 
-// Пиши код ниже этой строки
-const getFriends = users => {
-  const allFriends = users.flatMap(user => user.friends);
-  console.log(allFriends);
-  return allFriends.filter(
-    (friend, index, arrey) => arrey.indexOf(friend) === index,
-  );
-  console.log();
-};
-// Пиши код выше этой строки
-getFriends(people);
+// // Пиши код ниже этой строки
+// const getFriends = users => {
+//   const allFriends = users.flatMap(user => user.friends);
+//   console.log(allFriends);
+//   return allFriends.filter(
+//     (friend, index, arrey) => arrey.indexOf(friend) === index,
+//   );
+//   console.log();
+// };
+// // Пиши код выше этой строки
+// getFriends(people);
+
